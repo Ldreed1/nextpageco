@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Next Page Company — Personalized Laser Engraved Gifts & Books</title>
+<meta name="description" content="Next Page Company creates personalized laser-engraved gifts in slate, wood, and metal, plus literary fiction. Handcrafted in Highland, California. Your story is not over.">
+<meta property="og:title" content="Next Page Company">
+<meta property="og:description" content="Personalized laser-engraved gifts and literary fiction. Handcrafted in Highland, California.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.nextpageco.com/product6.jpg">
+<meta property="og:url" content="https://www.nextpageco.com">
+<link rel="icon" href="logo.webp">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0f0d0b;
+  --warm:#1a1714;
+  --surface:#242019;
+  --gold:#c9a96e;
+  --cream:#e8e2d8;
+  --muted:#8a8278;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+
+/* Nav */
+nav{position:fixed;top:0;width:100%;z-index:10;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(15,13,11,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,169,110,.06)}
+nav a{color:var(--cream);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:400;transition:color .3s}
+.nav-links{display:flex;gap:32px}
+.nav-links a:hover{color:var(--gold)}
+.nav-name{font-family:var(--serif);font-size:18px;letter-spacing:.02em;text-transform:none;font-weight:400}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 24px;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%, rgba(201,169,110,.06) 0%, transparent 60%)}
+.hero-logo{width:clamp(120px,18vw,180px);margin-bottom:40px;position:relative;filter:brightness(1.3)}
+.hero-tagline{font-family:var(--serif);font-size:clamp(32px,5vw,56px);font-weight:300;line-height:1.2;margin-bottom:16px;color:var(--cream);position:relative}
+.hero-sub{font-family:var(--serif);font-size:clamp(16px,2vw,20px);font-weight:300;font-style:italic;color:var(--muted);margin-bottom:48px;position:relative}
+.hero-desc{font-size:15px;color:var(--muted);font-weight:300;line-height:1.8;max-width:520px;margin-bottom:48px;position:relative}
+.hero-cta{display:inline-flex;gap:20px;flex-wrap:wrap;justify-content:center;position:relative}
+.hero-cta a{padding:14px 32px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all .3s}
+.cta-primary{background:var(--gold);color:var(--bg);border:1px solid var(--gold)}
+.cta-primary:hover{background:#d4b87a}
+.cta-secondary{border:1px solid rgba(201,169,110,.4);color:var(--gold)}
+.cta-secondary:hover{background:rgba(201,169,110,.08)}
+.scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:12px;letter-spacing:.1em;animation:pulse 2s ease infinite;opacity:.5}
+@keyframes pulse{0%,100%{opacity:.3;transform:translateX(-50%) translateY(0)}50%{opacity:.6;transform:translateX(-50%) translateY(6px)}}
+
+/* Sections */
+section{max-width:900px;margin:0 auto;padding:120px 24px}
+.section-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:400}
+.section-title{font-family:var(--serif);font-size:clamp(28px,4vw,40px);font-weight:300;margin-bottom:16px}
+.section-desc{color:var(--muted);font-size:15px;line-height:1.8;font-weight:300;margin-bottom:48px;max-width:600px}
+
+/* Product showcase */
+.products{background:var(--warm);padding:120px 24px}
+.products-inner{max-width:900px;margin:0 auto}
+.product-hero{width:100%;max-height:400px;object-fit:cover;border-radius:4px;margin-bottom:24px;border:1px solid rgba(201,169,110,.1)}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-bottom:32px}
+.product-grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px;border:1px solid rgba(201,169,110,.1);transition:transform .3s}
+.product-grid img:hover{transform:scale(1.03)}
+.product-review{font-family:var(--serif);font-size:17px;font-style:italic;color:var(--muted);line-height:1.7;margin-bottom:32px;padding-left:20px;border-left:2px solid rgba(201,169,110,.3)}
+.product-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.product-stats{font-size:13px;color:var(--muted);letter-spacing:.03em}
+
+/* How it works */
+.how-it-works{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;margin-top:48px}
+.how-step{text-align:center;padding:32px 20px}
+.how-step .step-num{font-family:var(--serif);font-size:36px;color:var(--gold);font-weight:300;margin-bottom:12px}
+.how-step h4{font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;font-weight:400}
+.how-step p{font-size:13px;color:var(--muted);line-height:1.7;font-weight:300}
+
+/* Books */
+.books-item{display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap}
+.books-text{flex:1;min-width:280px}
+.books-text h3{font-family:var(--serif);font-size:28px;font-weight:400;margin-bottom:12px}
+.books-text h3 a{color:var(--cream);text-decoration:none;transition:color .3s}
+.books-text h3 a:hover{color:var(--gold)}
+.books-text p{color:var(--muted);font-size:15px;line-height:1.8;font-weight:300;margin-bottom:20px}
+.books-tag{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:block}
+
+/* Custom orders */
+.custom{background:var(--surface);border:1px solid rgba(201,169,110,.1);border-radius:4px;padding:48px;text-align:center;margin-top:64px}
+.custom h3{font-family:var(--serif);font-size:24px;font-weight:400;margin-bottom:12px}
+.custom p{color:var(--muted);font-size:14px;line-height:1.8;font-weight:300;margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
+
+/* Founder */
+.founder{text-align:center}
+.founder img{width:140px;height:140px;object-fit:cover;border-radius:50%;margin-bottom:20px;border:2px solid rgba(201,169,110,.15)}
+.founder h3{font-family:var(--serif);font-size:24px;font-weight:400;margin-bottom:12px}
+.founder p{color:var(--muted);font-size:14px;line-height:1.8;font-weight:300;max-width:480px;margin:0 auto}
+
+/* Mission */
+.mission{background:var(--warm);padding:120px 24px;text-align:center}
+.mission-text{max-width:600px;margin:0 auto}
+.mission-text p{font-family:var(--serif);font-size:20px;font-weight:300;line-height:1.8;color:var(--cream);margin-bottom:24px}
+.mission-text p.small{font-family:var(--sans);font-size:14px;color:var(--muted);font-style:normal}
+.mission-988{display:inline-block;margin-top:32px;padding:12px 28px;border:1px solid rgba(201,169,110,.3);border-radius:2px;font-size:13px;letter-spacing:.08em;color:var(--gold);text-decoration:none;transition:all .3s}
+.mission-988:hover{background:rgba(201,169,110,.08)}
+
+/* Footer */
+footer{text-align:center;padding:60px 24px 40px;font-size:12px;color:var(--muted);letter-spacing:.05em}
+footer a{color:var(--gold);text-decoration:none;transition:color .3s}
+footer a:hover{text-decoration:underline}
+footer p{margin-bottom:8px}
+.footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:16px;flex-wrap:wrap}
+
+/* Animations */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* Mobile */
+@media(max-width:768px){
+  nav{padding:16px 20px}
+  .nav-links{gap:20px}
+  .nav-links a{font-size:11px}
+  section{padding:80px 20px}
+  .products{padding:80px 20px}
+  .mission{padding:80px 20px}
+  .product-grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+  .books-item{flex-direction:column}
+  .custom{padding:32px 24px}
+  .how-it-works{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .how-it-works{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-name">Next Page</a>
+  <div class="nav-links">
+    <a href="#shop">Shop</a>
+    <a href="#books">Books</a>
+    <a href="#story">Our Story</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <img src="logo.webp" alt="Next Page Co." class="hero-logo">
+  <div class="hero-tagline">Your story is not over.</div>
+  <p class="hero-desc">Personalized laser-engraved gifts and literary fiction. Handcrafted in Highland, California.</p>
+  <div class="hero-cta">
+    <a href="https://www.etsy.com/shop/NextPageCompany" target="_blank" class="cta-primary">Shop Gifts</a>
+    <a href="#books" class="cta-secondary">Our Books</a>
+  </div>
+  <div class="scroll-hint">↓</div>
+</div>
+
+<!-- Products / Shop -->
+<div class="products" id="shop">
+  <div class="products-inner">
+    <div class="section-label">Handcrafted Goods</div>
+    <div class="section-title">Made to order. Made to last.</div>
+    <p class="section-desc">Every piece is laser-engraved by hand in our Highland, California studio. Slate, wood, metal. Personalized for the people and moments that matter.</p>
+
+    <img src="product6.jpg" alt="The Walkers personalized gift set" class="product-hero">
+
+    <div class="product-grid">
+      <img src="product1.jpg" alt="Engraved cutting board">
+      <img src="product2.jpg" alt="Engraved wooden fan">
+      <img src="product3.jpg" alt="Wedding gift set">
+      <img src="product4.jpg" alt="Personalized tumblers">
+      <img src="product5.jpg" alt="Engraved bamboo cutting board">
+    </div>
+
+    <div class="product-review">"Absolutely beautiful work. The engraving was perfect and it arrived so quickly!"<br><span style="font-size:14px;font-style:normal;color:var(--gold)">★★★★★</span></div>
+
+    <div class="product-actions">
+      <a href="https://www.etsy.com/shop/NextPageCompany" target="_blank" class="cta-primary" style="padding:12px 28px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:2px">Shop on Etsy</a>
+      <span class="product-stats">5.0 ★ · 25 reviews</span>
+    </div>
+
+    <div class="how-it-works reveal">
+      <div class="how-step">
+        <div class="step-num">1</div>
+        <h4>Pick a Design</h4>
+        <p>Browse our collection of slate, wood, and metal pieces</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">2</div>
+        <h4>Personalize It</h4>
+        <p>Add names, dates, messages, or custom artwork</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">3</div>
+        <h4>We Engrave</h4>
+        <p>Precision laser engraving in our California studio</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">4</div>
+        <h4>Ships in 3-5 Days</h4>
+        <p>Carefully packaged and shipped to your door</p>
+      </div>
+    </div>
+
+    <div class="custom reveal">
+      <h3>Custom Orders Welcome</h3>
+      <p>Have something specific in mind? We love bringing your ideas to life. Corporate gifts, wedding parties, memorials, or anything in between.</p>
+      <a href="https://www.etsy.com/shop/NextPageCompany" target="_blank" class="cta-secondary" style="padding:12px 28px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;display:inline-block">Request a Custom Order</a>
+    </div>
+  </div>
+</div>
+
+<!-- Books -->
+<section id="books" class="reveal">
+  <div class="section-label">Books</div>
+  <div class="books-item">
+    <div class="books-text">
+      <span class="books-tag">Coming June 2026</span>
+      <h3><a href="https://www.lucasreedbooks.com">Toward the Shape of Time</a></h3>
+      <p>A literary science fiction novel about grief, connection, and the distances we cross to find the people we've lost.</p>
+      <a href="https://www.lucasreedbooks.com" class="cta-secondary" style="padding:10px 24px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;display:inline-block">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Founder -->
+<section class="founder reveal">
+  <div class="section-label">Founded by</div>
+  <img src="founder.jpg" alt="Lucas Reed">
+  <h3>Lucas Reed</h3>
+  <p>Engineer, author, maker. I started Next Page in 2022 because I believe everyone deserves another chapter. When I'm not engraving or writing, I'm chasing my two daughters around Highland, California.</p>
+</section>
+
+<!-- Mission -->
+<div class="mission" id="story">
+  <div class="mission-text reveal">
+    <div class="section-label" style="color:var(--gold)">Our Story</div>
+    <p style="margin-top:24px">Next Page was born in 2022, after someone we love tried to end their story.</p>
+    <p>We exist because we refused to let that be the last page.</p>
+    <p class="small">5% of all proceeds support suicide prevention.</p>
+    <a href="https://988lifeline.org" class="mission-988" target="_blank">988 Suicide &amp; Crisis Lifeline</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://www.lucasreedbooks.com">Books</a>
+    <a href="https://www.etsy.com/shop/NextPageCompany">Etsy</a>
+    <a href="https://www.instagram.com/nextpagecompany" target="_blank">Instagram</a>
+    <a href="mailto:nextpageco.shop@gmail.com">Contact</a>
+  </div>
+  <p>&copy; 2022&ndash;2026 Next Page Company LLC &middot; Highland, California</p>
+</footer>
+
+<script>
+const els=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+els.forEach(f=>obs.observe(f));
+</script>
+</body>
+</html>
